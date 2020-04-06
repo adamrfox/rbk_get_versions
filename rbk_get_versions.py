@@ -13,7 +13,7 @@ def usage():
     sys.stderr.write("-c | --config: Use this file for hosts/creds (encoded)\n")
     sys.stderr.write("-i | --input: Use this file for host/creds (plain textt)\n")
     sys.stderr.write("-f | --find: Only show versions that start with given string\n")
-    sys.stderr.write("NOTE: -i or -c if required")
+    sys.stderr.write("NOTE: -i or -c if required\n")
     exit(0)
 
 def get_creds_from_file(config, encoded):
