@@ -8,7 +8,7 @@ urllib3.disable_warnings()
 from codecs import decode
 
 def usage():
-    sys.stderr.write("Usage: rbk_get_versions.py [-h] -c config | -i config [-f os_family\n")
+    sys.stderr.write("Usage: rbk_get_versions.py [-h] -c config | -i config [-f os_family]\n")
     sys.stderr.write("-h | --help: Prints this message\n")
     sys.stderr.write("-c | --config: Use this file for hosts/creds (encoded)\n")
     sys.stderr.write("-i | --input: Use this file for host/creds (plain textt)\n")
