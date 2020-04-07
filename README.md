@@ -5,8 +5,6 @@ The goal of this script is to find out versions of the CDM software across multi
 labs we have many clusters that get re-imaged regularly and I had the need to find specific versions for testing.  This
 script is an attempt to automate that process.
 
-The script takes an input file that can either be plaintext or encoded using the creds_encode script included as well.
-The creds_encode script takes a text file and converts it into an encoded version of the data to hide credentials.  
 
 Syntax of creds_encode:
 <pre>
@@ -15,17 +13,14 @@ Usage: creds_encode.py input_file output_file
 
 Syntax of rbk_get_versions
 <pre>
-Usage: rbk_get_versions.py [-h] -c config | -i config [-f os_family
+Usage: rbk_get_versions.py [-h] -i config [-f os_family
 -h | --help: Prints this message
--c | --config: Use this file for hosts/creds (encoded)
 -i | --input: Use this file for host/creds (plain textt)
 -f | --find: Only show versions that start with given string
-NOTE: -i or -c is required.
+NOTE: -i is required.
 </pre>
 
 The format of the config file is:
-host:user:password
-
 One host per line.
 
 The -f flag is used to find a particular family of OS.  It does a simple match where it looks at the version of the Rubrik
