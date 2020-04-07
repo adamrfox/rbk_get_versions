@@ -5,12 +5,6 @@ The goal of this script is to find out versions of the CDM software across multi
 labs we have many clusters that get re-imaged regularly and I had the need to find specific versions for testing.  This
 script is an attempt to automate that process.
 
-
-Syntax of creds_encode:
-<pre>
-Usage: creds_encode.py input_file output_file
-</pre>
-
 Syntax of rbk_get_versions
 <pre>
 Usage: rbk_get_versions.py [-h] -i config [-f os_family
